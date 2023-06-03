@@ -50,7 +50,7 @@ class LinkedList:
         if self.length == 0:
             self.head = None
             self.tail = None
-        return curr.value
+        return curr
     
     def pop_front(self):
         if self.length == 0:
@@ -62,7 +62,7 @@ class LinkedList:
         if self.length == 0:
             self.head = None
             self.tail = None
-        return curr.value
+        return curr
     
     def get(self, index):
         if index < 0 or index >= self.length:
@@ -96,8 +96,34 @@ class LinkedList:
         return True
 
     def remove(self, index):
-        pass
-
+        if index < 0 or index >= self.length:
+            return None
+        if self.length == 0:
+            return None
+        if index == 0:
+            return self.pop_front()
+        if index == self.length-1:
+            return self.pop()
+        prev = self.get(index - 1)
+        temp = prev.next
+        prev.next = temp.next
+        temp.next = None
+        self.length -= 1
+        return temp
+    
+    def reverse_list(self):
+        curr = self.head
+        self.head = self.tail
+        self.tail = curr
+        before = None
+        after =  curr.next
+        for _ in range(self.length):
+            after = curr.next
+            curr.next = before
+            before = curr
+            curr = after
+        return self
+    
     def print_list(self):
         curr = self.head
         while curr:
@@ -111,3 +137,10 @@ print(lls.get(0))
 print(lls.set_value(1,55))
 lls.insert(1, 22)
 lls.print_list()
+print()
+lls.remove(1)
+lls.print_list()
+print()
+lls.reverse_list()
+lls.print_list()
+

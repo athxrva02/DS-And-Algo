@@ -1,4 +1,4 @@
 # Data Structures and Algo course
 
-## Current Status
-- Yet to Start 31/05
+## Current Status - 03/06
+- Completed linked list
