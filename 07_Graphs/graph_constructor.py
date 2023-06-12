@@ -1,5 +1,4 @@
 class Graph:
-
     def __init__(self) -> None:
         self.adj_list = {}
     
@@ -50,5 +49,6 @@ g.add_edge("A", "D")
 g.add_edge("B", "D")
 g.add_edge("C", "D")
 g.print_graph()
+print()
 g.remove_vertex("B")
 g.print_graph()
