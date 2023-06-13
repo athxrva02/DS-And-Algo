@@ -1,17 +1,22 @@
-# Stack Constructor:
-This code defines a Stack class which contains a Node class that is used to store the values in the stack, and provides methods to add and remove items from the stack.
+# Stack Class
 
-The Node class has two attributes: value, which stores the value of the node, and next, which is a reference to the next node in the linked list.
+This code defines a Stack class, which is a data structure that follows the Last-In-First-Out (LIFO) principle. The code initializes the class with a single value and creates a Node class which contains elements to be used in creating the stack.
 
-The Stack class has three methods:
+## Class Node:
 
-init(self,value): initializes a new Stack object with the value passed in. It creates a new Node object with the value and sets the Stack's top to point to it. The height is set to 1.
-push(self,value): adds a new node to the top of the stack containing the value passed in, and updates the height attribute. It does so by creating a new Node object, setting its next attribute to the current top, and then updating the top to point to the new node.
-pop(self): removes the top node from the stack and returns it. It does so by updating the top attribute to point to the next node, and decrementing the height attribute. If there are no nodes left on the stack it returns None.
+The Node class contains two attributes, value- to store the value of the node and next- which is a reference to the next node in the Stack. The __init__ method of the class initializes the attributes to their default values, with next set as None.
 
-The print_stack method iterates through the stack and prints each node's value, starting from the top.
+## Class Stack:
 
-Lastly, the code creates a new Stack object with an initial value of 10, and calls the push method three times before printing the stack. It then calls the pop method once, prints the stack again, and exits.
+The Stack class contains various methods to operate on the stack. The __init__ method initializes the class with a single initial value, creates a new node and sets top to refer to it. The height attribute tracks the number of nodes in the stack.
+
+The push method adds a new node to the top of the stack with the value passed in as an argument. If the stack is empty, it creates a new node and sets the top attribute to refer to it. If the stack is not empty, it creates a new node, sets its reference to the current top node, and updates the top attribute.
+
+The pop method removes the top node from the stack and returns it. It does so by updating the top attribute to refer to the next node, decrementing the height attribute, and returning the popped node. If the stack is empty before calling the pop method, it returns None.
+
+The print_stack method iterates through the stack, starting from the top, and prints the value of each node.
+
+The code creates an instance of Stack class with an initial value of 10, adds three more values to the stack using the push method, and prints the stack. Then it removes and returns the last node from the stack using the pop method, prints the stack again.
 
 
 # Queue Constructor:
