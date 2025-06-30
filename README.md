@@ -1,10 +1,4 @@
-# Data Structures and Algo course
+# Personal repository for DSA practice and interview prep.
 
-## Current Status of Completion - 13/06
-- Linked list
-- DLL
-- Stacks and Queues
-- Trees
-- Hash Tables
-- Graphs
-- Recursion
+# Change log:
+30/06 - Merge Sorted Array, Remove element

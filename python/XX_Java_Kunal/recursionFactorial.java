@@ -1,4 +1,4 @@
-package XX_Java_Kunal;
+package python.XX_Java_Kunal;
 
 public class recursionFactorial {
     public static void main(String[] args) {

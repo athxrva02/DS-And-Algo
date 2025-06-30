@@ -1,4 +1,4 @@
-package XX_Java_Kunal;
+package python.XX_Java_Kunal;
 
 import java.util.*;
 
@@ -9,7 +9,5 @@ public class anagrams
         String x = "cat";
         String y = "dog";
         String z = "tac";
-
-        for()
     }
 }
