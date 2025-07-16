@@ -7,3 +7,4 @@
 - 03/07 - Best Time to Buy and Sell Stock, Best Time to Buy and Sell Stock II, Find Kth Character in String Game 1
 - 08/07 - Jump Game, H Index, RandomizedSet
 - 09/07 - Gas Station, Length of Last Word
+- 16/07 - Find Index of first occurrence, Longest Common Prefix
