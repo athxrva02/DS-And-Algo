@@ -14,3 +14,4 @@
 - 21/07 - Container with Most Water, 3Sum
 - 22/07 - **Jump Game II, Candy * -- Need to be revised.**
 - 23/07 - Isomorphic Strings, Ransom Note
+- 24/07 - Valid anagram, Word Pattern
