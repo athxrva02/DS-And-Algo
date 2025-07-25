@@ -1,7 +1,5 @@
 package dsajava;
 
-import lombok.extern.log4j.Log4j2;
-
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
