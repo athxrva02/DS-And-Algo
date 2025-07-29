@@ -18,3 +18,4 @@
 - 25/07 - Two Sum
 - 26/07 - Contains Duplicate II, Group Anagrams
 - 27/07 - Happy Number
+- 29/07 - Longest Consecutive Subsequence, Search Insert Position
